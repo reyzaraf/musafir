@@ -11,9 +11,15 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
+
+import com.example.musafirapp.util.UserSession;
+
 import java.lang.reflect.Type;
 
 public class SplashScreen extends AppCompatActivity {
+
+    UserSession userSession;
+
     TextView t;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,16 +33,18 @@ public class SplashScreen extends AppCompatActivity {
 
         }
         t = (TextView) findViewById(R.id.text_splash);
+        userSession = new UserSession(getApplicationContext());
         Typeface myCustomFont = Typeface.createFromAsset(getAssets(),"fonts/ptsanserif.ttf");
         t.setTypeface(myCustomFont);
         new Handler().postDelayed(new Runnable() {
             @Override
 
             public void run() {
-                Intent i = new Intent(SplashScreen.this, MainActivity.class);
-                startActivity(i);
-
-                finish();
+//                Intent i = new Intent(SplashScreen.this, LoginActivity.class);
+//                startActivity(i);
+//
+//                finish();
+                userSession.checkLogin();
             }
         }, 2000);
 

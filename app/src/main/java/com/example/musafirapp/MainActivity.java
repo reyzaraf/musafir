@@ -16,9 +16,13 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
 
+import com.example.musafirapp.util.UserSession;
+
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
     private static final String TAG = "MainActivity";
     BottomNavigationView bottomNavigationView ;
+
+    UserSession userSession;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
