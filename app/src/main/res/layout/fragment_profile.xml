@@ -3,12 +3,293 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Profile">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:textAlignment="center"
+        android:background="@color/blueDarken"
+        >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:subtitleTextColor="#ffffff"
+            app:titleTextColor="#ffffff"
+            android:background="@color/blueDarken"
+            />
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_marginTop="65dp">
+
+        <ImageView
+            android:id="@+id/imageview2"
+            android:layout_width="71dp"
+            android:layout_height="71dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/foto" />
+
+        <TextView
+            android:id="@+id/namauser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="48dp"
+            android:text="Siti Nurmala"
+            android:textColor="@color/blueDarken"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@id/imageview2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/progresuser"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/barprogresbiru"
+            app:layout_constraintStart_toEndOf="@id/imageview2"
+            app:layout_constraintTop_toTopOf="@id/nameuser" />
+
+        <TextView
+            android:id="@+id/nameuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="48dp"
+            android:gravity="right"
+            android:text="Edit Profile"
+            android:textColor="@color/blueLighten"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@id/progresuser"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:id="@+id/kartuarajhi"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/round_box"
+            android:elevation="20dp"
+            android:padding="10dp"
+            app:layout_constraintStart_toEndOf="@id/progresuser"
+            app:layout_constraintTop_toTopOf="@id/progresuser">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="sdasda"
+                    android:textColor="@color/blueLighten" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="196dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/round_box"
+            android:elevation="20dp"
+            android:padding="10dp"
+            app:layout_constraintStart_toEndOf="@id/kartuarajhi"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/password" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Password"
+                    android:textColor="@color/blueLighten" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/alamat"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="272dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/round_box"
+            android:elevation="20dp"
+            android:padding="10dp"
+            app:layout_constraintStart_toEndOf="@id/password"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/alamaticon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Alamat"
+                    android:textColor="@color/blueLighten" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/panbot"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="348dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/round_box"
+            android:elevation="20dp"
+            android:padding="10dp"
+            app:layout_constraintStart_toEndOf="@id/alamat"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/panicbutton" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Panic Button"
+                    android:textColor="@color/blueLighten" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cuser"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="424dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/round_box"
+            android:elevation="20dp"
+            android:padding="10dp"
+            app:layout_constraintStart_toEndOf="@id/panbot"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/support" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Customer Service"
+                    android:textColor="@color/blueLighten" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="500dp"
+            android:background="@drawable/round_box"
+            android:elevation="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp"
+            app:layout_constraintStart_toEndOf="@id/cuser"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/logout" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Logout"
+                    android:textColor="@color/blueLighten" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
 
 </FrameLayout>

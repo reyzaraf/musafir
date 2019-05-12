@@ -9,9 +9,13 @@
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:textAlignment="center"
+        android:background="@color/blueDarken"
         >
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
+                android:paddingTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:subtitleTextColor="#ffffff"
@@ -22,4 +26,243 @@
 
     </android.support.design.widget.AppBarLayout>
 
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="75dp">
+
+        <LinearLayout
+            android:id="@+id/pasd"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_box"
+            android:elevation="20dp"
+            android:padding="10dp"
+            app:layout_constraintStart_toEndOf="@id/kartuarajhi"
+            app:layout_constraintTop_toTopOf="parent">
+            <SearchView
+                android:background="@color/greyAct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                >
+
+            </SearchView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dompet_help"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="96dp"
+            android:background="@drawable/round_box"
+            android:elevation="20dp"
+            android:padding="10dp"
+            app:layout_constraintStart_toEndOf="@id/kartuarajhi"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/dompet" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Dompet"
+                    android:textColor="@color/blueLighten" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/transfer_help"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="172dp"
+            android:background="@drawable/round_box"
+            android:elevation="20dp"
+            android:padding="10dp"
+            app:layout_constraintStart_toEndOf="@id/dompet_help"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/transfer" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Transfer"
+                    android:textColor="@color/blueLighten" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/transaksi_help"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="244dp"
+            android:background="@drawable/round_box"
+            android:elevation="20dp"
+            android:padding="10dp"
+            app:layout_constraintStart_toEndOf="@id/transfer_help"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/transaksi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Transaksi"
+                    android:textColor="@color/blueLighten" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pembiayaan_help"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="316dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/round_box"
+            android:elevation="20dp"
+            android:padding="10dp"
+            app:layout_constraintStart_toEndOf="@id/transaksi_help"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/loan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Pembiayaan"
+                    android:textColor="@color/blueLighten" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/marketplace_help"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="468dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/round_box"
+            android:elevation="20dp"
+            android:padding="10dp"
+            app:layout_constraintStart_toEndOf="@id/tariktunai_help"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/shoppingcart" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Marketplace"
+                    android:textColor="@color/blueLighten" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tariktunai_help"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="392dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:background="@drawable/round_box"
+            android:elevation="20dp"
+            android:padding="10dp"
+            app:layout_constraintStart_toEndOf="@id/pembiayaan_help"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/tariktunai" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Tarik Tunai"
+                    android:textColor="@color/blueLighten" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
 </FrameLayout>

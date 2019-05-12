@@ -4,6 +4,6 @@
              android:color="@color/blueDarken"
             />
     <item android:state_checked="false"
-        android:color="#000"
+        android:color="@color/greyAct"
         />
 </selector>
